@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Scene</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Scene</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupScene</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUSceneRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_scene_ref.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_scene_ref.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetName</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetName</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetDescription</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDescription</b>( <i>String</i> desc ) </div></div>
+<div class="caller"><div class="returntype">Camera </div><div class="declaration"><b>GetCamera</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetCamera</b>( <i>Camera</i> camera ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseCamera</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseCamera</b>( <i>Boolean</i> use_camera ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetIncludeInAnimation</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetIncludeInAnimation</b>( <i>Boolean</i> include_in_animation ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseShadowInfo</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseShadowInfo</b>( <i>Boolean</i> use_shadow_info ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseRenderingOptions</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseRenderingOptions</b>( <i>Boolean</i> use_rendering_options ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetSketchAxesDisplayed</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetSketchAxesDisplayed</b>( <i>Boolean</i> displayed ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseHidden</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseHidden</b>( <i>Boolean</i> use_hidden ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseHiddenGeometry</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseHiddenGeometry</b>( <i>Boolean</i> use_hidden ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseHiddenObjects</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseHiddenObjects</b>( <i>Boolean</i> use_hidden ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseHiddenLayers</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseHiddenLayers</b>( <i>Boolean</i> use_hidden_layers ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseSectionPlanes</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseSectionPlanes</b>( <i>Boolean</i> use_section_planes ) </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>GetStyle</b>() </div></div>
+<div class="caller"><div class="returntype">RenderingOptions </div><div class="declaration"><b>GetRenderingOptions</b>() </div></div>
+<div class="caller"><div class="returntype">ShadowInfo </div><div class="declaration"><b>GetShadowInfo</b>() </div></div>
+<div class="caller"><div class="returntype">LayerCollection </div><div class="declaration"><b>GetLayers</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddLayer</b>( <i>Layer</i> layer ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveLayer</b>( <i>Layer</i> layer ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ClearLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Axes </div><div class="declaration"><b>GetAxes</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseAxes</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseAxes</b>( <i>Boolean</i> use_axes ) </div></div>
+<div class="caller"><div class="returntype">LayerFolderCollection </div><div class="declaration"><b>GetLayerFolders</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddLayerFolder</b>( <i>LayerFolder</i> layer_folder ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveLayerFolder</b>( <i>LayerFolder</i> layer_folder ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ClearLayerFolders</b>() </div></div>
+<div class="caller"><div class="returntype">EntityCollection </div><div class="declaration"><b>GetHiddenEntities</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Copy</b>( <i>Scene</i> copy ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>ClearPhotoMatchImage</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetPhotoMatchImageDisplayed</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetDrawingElementHidden</b>( <i>DrawingElement</i> drawing_element ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDrawingElementHidden</b>( <i>DrawingElement</i> drawing_element, <i>Boolean</i> is_hidden ) </div></div>
+<div class="caller"><div class="returntype">SURefType </div><div class="declaration"><b>GetEntityType</b>() </div></div>
+<div class="caller"><div class="returntype">Int32 </div><div class="declaration"><b>GetID</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetPersistentID</b>() </div></div>
+<div class="caller"><div class="returntype">AttributeDictionaryCollection </div><div class="declaration"><b>GetAttributeDictionaries</b>() </div></div>
+<div class="caller"><div class="returntype">AttributeDictionary </div><div class="declaration"><b>GetAttributeDictionary</b>( <i>String</i> dictName ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddAttributeDictionary</b>( <i>AttributeDictionary</i> attributeDict ) </div></div>
+<div class="caller"><div class="returntype">Entities </div><div class="declaration"><b>GetParentEntities</b>() </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Entity</div><div class="declaration">Entity</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - GeometryInput</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">GeometryInput</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupGeometryInput</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUGeometryInputRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_geometry_input_ref.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_geometry_input_ref.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddVertex</b>( <i>Point3D</i> point ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>AddEdge</b>( <i>Int64</i> vertex0_index, <i>Int64</i> vertex1_index ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>AddFace</b>( <i>LoopInput</i> outer_loop ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetVertices</b>( <i>Point3DCollection</i> points ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>EdgeSetHidden</b>( <i>Int64</i> edge_index, <i>Boolean</i> hidden ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>EdgeSetSoft</b>( <i>Int64</i> edge_index, <i>Boolean</i> soft ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>EdgeSetSmooth</b>( <i>Int64</i> edge_index, <i>Boolean</i> smooth ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>EdgeSetMaterial</b>( <i>Int64</i> edge_index, <i>Material</i> material ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>EdgeSetLayer</b>( <i>Int64</i> edge_index, <i>Layer</i> layer ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetReverse</b>( <i>Int64</i> face_index, <i>Boolean</i> reverse ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetLayer</b>( <i>Int64</i> face_index, <i>Layer</i> layer ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceAddInnerLoop</b>( <i>Int64</i> face_index, <i>LoopInput</i> loop_input ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetHidden</b>( <i>Int64</i> face_index, <i>Boolean</i> hidden ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetFrontMaterial</b>( <i>Int64</i> face_index, <i>MaterialInput</i> material ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetBackMaterial</b>( <i>Int64</i> face_index, <i>MaterialInput</i> material ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetFrontMaterialByPosition</b>( <i>Int64</i> face_index, <i>MaterialPositionInput</i> material ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FaceSetBackMaterialByPosition</b>( <i>Int64</i> face_index, <i>MaterialPositionInput</i> material ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>AddCurve</b>( <i>List</i> edge_indices ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddArcCurve</b>( <i>Int64</i> startPointIndex, <i>Int64</i> endPointIndex, <i>Point3D</i> center, <i>Vector3D</i> normal, <i>Int64</i> numSegments, <i>Int64&</i> addedCurveIndex, <i>Int64&</i> controlEdgeIndex ) </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

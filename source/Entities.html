@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Entities</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Entities</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupEntities</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUEntitiesRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_entities_ref.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_entities_ref.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Clear</b>() </div></div>
+<div class="caller"><div class="returntype">ComponentInstanceCollection </div><div class="declaration"><b>GetInstances</b>() </div></div>
+<div class="caller"><div class="returntype">FaceCollection </div><div class="declaration"><b>GetFaces</b>() </div></div>
+<div class="caller"><div class="returntype">CurveCollection </div><div class="declaration"><b>GetCurves</b>() </div></div>
+<div class="caller"><div class="returntype">ArcCurveCollection </div><div class="declaration"><b>GetArcCurves</b>() </div></div>
+<div class="caller"><div class="returntype">GuidePointCollection </div><div class="declaration"><b>GetGuidePoints</b>() </div></div>
+<div class="caller"><div class="returntype">GuideLineCollection </div><div class="declaration"><b>GetGuideLines</b>() </div></div>
+<div class="caller"><div class="returntype">EdgeCollection </div><div class="declaration"><b>GetEdges</b>() </div></div>
+<div class="caller"><div class="returntype">Polyline3dCollection </div><div class="declaration"><b>GetPolyline3ds</b>() </div></div>
+<div class="caller"><div class="returntype">GroupCollection </div><div class="declaration"><b>GetGroups</b>() </div></div>
+<div class="caller"><div class="returntype">ImageCollection </div><div class="declaration"><b>GetImages</b>() </div></div>
+<div class="caller"><div class="returntype">SectionPlaneCollection </div><div class="declaration"><b>GetSectionPlanes</b>() </div></div>
+<div class="caller"><div class="returntype">DimensionCollection </div><div class="declaration"><b>GetDimensions</b>() </div></div>
+<div class="caller"><div class="returntype">TextCollection </div><div class="declaration"><b>GetTexts</b>() </div></div>
+<div class="caller"><div class="returntype">BoundingBox3D </div><div class="declaration"><b>GetBoundingBox</b>() </div></div>
+<div class="caller"><div class="returntype">BoundingBox3D </div><div class="declaration"><b>GetBoundingBoxLLA</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddInstance</b>( <i>ComponentInstance</i> instance, <i>String&</i> name ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddFace</b>( <i>Face</i> face ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddEdge</b>( <i>Edge</i> edge ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddGuidePoint</b>( <i>GuidePoint</i> guidePoint ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddGuideLine</b>( <i>GuideLine</i> guideLine ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddCurve</b>( <i>Curve</i> curve ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddArcCurve</b>( <i>ArcCurve</i> arcCurve ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddGroup</b>( <i>Group</i> group ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddSectionPlane</b>( <i>SectionPlane</i> sectionPlane ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddText</b>( <i>Text</i> text ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddImage</b>( <i>Image</i> image ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Transform</b>( <i>EntityCollection</i> entCol, <i>Transformation3D</i> tranform ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>TransformMultiple</b>( <i>EntityCollection</i> entCol, <i>Transformation3DCollection</i> tranforms ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Erase</b>( <i>EntityCollection</i> entCol ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsRecursivelyEmpty</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>HasSectionCuts</b>() </div></div>
+<div class="caller"><div class="returntype">SectionPlane </div><div class="declaration"><b>GetActiveSectionPlane</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetActiveSectionPlane</b>( <i>SectionPlane</i> sectionPlane ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>EntityListFill</b>( <i>SURefType</i> refType, <i>EntityList</i> list ) </div></div>
+<div class="caller"><div class="returntype">EntityList </div><div class="declaration"><b>Weld</b>( <i>EdgeCollection</i> edges ) </div></div>
+<div class="caller"><div class="returntype">EntitiesParent </div><div class="declaration"><b>GetParent</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Fill</b>( <i>GeometryInput</i> geom_input, <i>Boolean</i> weldVertices ) </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

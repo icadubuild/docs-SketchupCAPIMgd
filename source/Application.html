@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Application</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Application</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupApplication</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">None</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/index.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/index.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>ErrorName</b>( <i>SUResult</i> suResultCode ) </div></div>
+<div class="caller"><div class="returntype">String <em>[static]</em></div><div class="declaration"><b>GetErrorName</b>( <i>SUResult</i> suResultCode ) </div></div>
+<div class="caller"><div class="returntype">Model </div><div class="declaration"><b>LoadModel</b>( <i>String</i> filePath, <i>SUModelLoadStatus&</i> status ) </div></div>
+<div class="caller"><div class="returntype">Model </div><div class="declaration"><b>CreateModel</b>() </div></div>
+<div class="caller"><div class="returntype">Layer </div><div class="declaration"><b>CreateLayer</b>( <i>String</i> layerName ) </div></div>
+<div class="caller"><div class="returntype">LayerFolder </div><div class="declaration"><b>CreateLayerFolder</b>( <i>String</i> folderName ) </div></div>
+<div class="caller"><div class="returntype">ComponentDefinition </div><div class="declaration"><b>CreateComponentDefinition</b>( <i>String</i> definitionName ) </div></div>
+<div class="caller"><div class="returntype">Face </div><div class="declaration"><b>CreateFace</b>( <i>Point3DCollection</i> points ) </div></div>
+<div class="caller"><div class="returntype">Face </div><div class="declaration"><b>CreateFace</b>( <i>Point3DCollection</i> vertices3d, <i>LoopInput</i> outer_loop ) </div></div>
+<div class="caller"><div class="returntype">Edge </div><div class="declaration"><b>CreateEdge</b>( <i>Point3D</i> startPoint, <i>Point3D</i> endPoint ) </div></div>
+<div class="caller"><div class="returntype">GuidePoint </div><div class="declaration"><b>CreateGuidePoint</b>( <i>Point3D</i> position ) </div></div>
+<div class="caller"><div class="returntype">GuideLine </div><div class="declaration"><b>CreateGuideLine</b>( <i>Point3D</i> startPoint, <i>Point3D</i> endPoint ) </div></div>
+<div class="caller"><div class="returntype">GuideLine </div><div class="declaration"><b>CreateGuideLineInfinite</b>( <i>Point3D</i> point, <i>Vector3D</i> direction ) </div></div>
+<div class="caller"><div class="returntype">Curve </div><div class="declaration"><b>CreateCurveWithEdges</b>( <i>EdgeCollection</i> edges ) </div></div>
+<div class="caller"><div class="returntype">ArcCurve </div><div class="declaration"><b>CreateArcCurve</b>( <i>Point3D</i> center, <i>Point3D</i> start_point, <i>Point3D</i> end_point, <i>Vector3D</i> normal, <i>Int64</i> num_edges ) </div></div>
+<div class="caller"><div class="returntype">Group </div><div class="declaration"><b>CreateGroup</b>() </div></div>
+<div class="caller"><div class="returntype">SectionPlane </div><div class="declaration"><b>CreateSectionPlane</b>() </div></div>
+<div class="caller"><div class="returntype">Text </div><div class="declaration"><b>CreateText</b>() </div></div>
+<div class="caller"><div class="returntype">Image </div><div class="declaration"><b>CreateImageFromFile</b>( <i>String</i> filePath ) </div></div>
+<div class="caller"><div class="returntype">Image </div><div class="declaration"><b>CreateImageFromImageRep</b>( <i>ImageRep</i> imageRep ) </div></div>
+<div class="caller"><div class="returntype">ImageRep </div><div class="declaration"><b>CreateImageRep</b>() </div></div>
+<div class="caller"><div class="returntype">EntityList </div><div class="declaration"><b>CreateEntityList</b>() </div></div>
+<div class="caller"><div class="returntype">EntityListIterator </div><div class="declaration"><b>CreateEntityListIterator</b>() </div></div>
+<div class="caller"><div class="returntype">GeometryInput </div><div class="declaration"><b>CreateGeometryInput</b>() </div></div>
+<div class="caller"><div class="returntype">Scene </div><div class="declaration"><b>CreateScene</b>() </div></div>
+<div class="caller"><div class="returntype">Camera </div><div class="declaration"><b>CreateCamera</b>() </div></div>
+<div class="caller"><div class="returntype">Polyline3d </div><div class="declaration"><b>CreatePolyline3d</b>() </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>CreateStyle</b>() </div></div>
+<div class="caller"><div class="returntype">Style </div><div class="declaration"><b>CreateStyleFromFile</b>( <i>String</i> filePath ) </div></div>
+<div class="caller"><div class="returntype">Material </div><div class="declaration"><b>CreateMaterial</b>() </div></div>
+<div class="caller"><div class="returntype">LoopInput </div><div class="declaration"><b>CreateLoopInput</b>() </div></div>
+<div class="caller"><div class="returntype">LengthFormatter </div><div class="declaration"><b>CreateLengthFormatter</b>() </div></div>
+<div class="caller"><div class="returntype">TypedValue </div><div class="declaration"><b>CreateTypedValue</b>() </div></div>
+<div class="caller"><div class="returntype">TextureWriter </div><div class="declaration"><b>CreateTextureWriter</b>() </div></div>
+<div class="caller"><div class="returntype">AttributeDictionary </div><div class="declaration"><b>CreateAttributeDictionary</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">Axes </div><div class="declaration"><b>CreateAxes</b>() </div></div>
+<div class="caller"><div class="returntype">Axes </div><div class="declaration"><b>CreateAxesCustom</b>( <i>Point3D</i> origin, <i>Vector3D</i> xaxis, <i>Vector3D</i> yaxis, <i>Vector3D</i> zaxis ) </div></div>
+<div class="caller"><div class="returntype">Texture </div><div class="declaration"><b>CreateTextureFromFile</b>( <i>String</i> file_path, <i>Double</i> s_scale, <i>Double</i> t_scale ) </div></div>
+<div class="caller"><div class="returntype">Texture </div><div class="declaration"><b>CreateTextureFromImageRep</b>( <i>ImageRep</i> imageRep ) </div></div>
+<div class="caller"><div class="returntype">InstancePath </div><div class="declaration"><b>CreateInstancePath</b>() </div></div>
+<div class="caller"><div class="returntype">InstancePath </div><div class="declaration"><b>CreateInstancePathCopy</b>( <i>InstancePath</i> source_path ) </div></div>
+<div class="caller"><div class="returntype">DimensionRadial </div><div class="declaration"><b>CreateDimensionRadial</b>( <i>InstancePath</i> path ) </div></div>
+<div class="caller"><div class="returntype">DimensionLinear </div><div class="declaration"><b>CreateDimensionLinear</b>( <i>Point3D</i> start_point, <i>InstancePath</i> start_path, <i>Point3D</i> end_point, <i>InstancePath</i> end_path, <i>Double</i> Offset ) </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">String</div><div class="declaration">ErrorMessage</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">SUResult</div><div class="declaration">ErrorCode</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">String</div><div class="declaration">ErrorCodeName</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Color</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Color</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupColor</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUColor</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_color.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_color.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">String </div><div class="declaration"><b>ToString</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetByName</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetByValue</b>( <i>Int32</i> value ) </div></div>
+<div class="caller"><div class="returntype">Color </div><div class="declaration"><b>Blend</b>( <i>Color</i> color, <i>Double</i> weight ) </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">String</div><div class="declaration">ColorString</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">Byte</div><div class="declaration">Red</div><div class="operations">[Get/Set]</div></div>
+<div class="caller"><div class="returntype">Byte</div><div class="declaration">Green</div><div class="operations">[Get/Set]</div></div>
+<div class="caller"><div class="returntype">Byte</div><div class="declaration">Blue</div><div class="operations">[Get/Set]</div></div>
+<div class="caller"><div class="returntype">Byte</div><div class="declaration">Alpha</div><div class="operations">[Get/Set]</div></div>
+<div class="caller"><div class="returntype">List</div><div class="declaration">Names</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

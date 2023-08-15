@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Transformation3D</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Transformation3D</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupTransformation</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUTransformation</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_transformation.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_transformation.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Point3D </div><div class="declaration"><b>GetOrigin</b>() </div></div>
+<div class="caller"><div class="returntype">Vector3D </div><div class="declaration"><b>GetXAxis</b>() </div></div>
+<div class="caller"><div class="returntype">Vector3D </div><div class="declaration"><b>GetYAxis</b>() </div></div>
+<div class="caller"><div class="returntype">Vector3D </div><div class="declaration"><b>GetZAxis</b>() </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>Identity</b>() </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>Translation</b>( <i>Vector3D</i> vector ) </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>Scale</b>( <i>Double</i> scale ) </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>NonUniformScale</b>( <i>Double</i> x_scale, <i>Double</i> y_scale, <i>Double</i> z_scale ) </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>ScaleAboutPoint</b>( <i>Point3D</i> point, <i>Double</i> scale ) </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>NonUniformScaleAboutPoint</b>( <i>Point3D</i> point, <i>Double</i> x_scale, <i>Double</i> y_scale, <i>Double</i> z_scale ) </div></div>
+<div class="caller"><div class="returntype">Transformation3D <em>[static]</em></div><div class="declaration"><b>Rotation</b>( <i>Point3D</i> point, <i>Vector3D</i> axes, <i>Double</i> angle ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetFromPointAndNormal</b>( <i>Point3D</i> point, <i>Vector3D</i> normal ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetFromPointAndAxes</b>( <i>Point3D</i> point, <i>Vector3D</i> x_axis, <i>Vector3D</i> y_axis, <i>Vector3D</i> z_axis ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTranslation</b>( <i>Vector3D</i> vector ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetScale</b>( <i>Double</i> scale ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetNonUniformScale</b>( <i>Double</i> x_scale, <i>Double</i> y_scale, <i>Double</i> z_scale ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetScaleAboutPoint</b>( <i>Point3D</i> point, <i>Double</i> scale ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetNonUniformScaleAboutPoint</b>( <i>Point3D</i> point, <i>Double</i> x_scale, <i>Double</i> y_scale, <i>Double</i> z_scale ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetRotation</b>( <i>Point3D</i> point, <i>Vector3D</i> axes, <i>Double</i> angle ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsMirrored</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsIdentity</b>() </div></div>
+<div class="caller"><div class="returntype">Transformation3D </div><div class="declaration"><b>GetInverse</b>() </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetZRotation</b>() </div></div>
+<div class="caller"><div class="returntype">Transformation3D </div><div class="declaration"><b>Multiply</b>( <i>Transformation3D</i> transform ) </div></div>
+<div class="caller"><div class="returntype">Transformation3D </div><div class="declaration"><b>Interpolate</b>( <i>Transformation3D</i> transform, <i>Double</i> weight ) </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">List</div><div class="declaration">Values</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

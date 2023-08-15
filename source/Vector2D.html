@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Vector2D</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Vector2D</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupVector2D</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUVector2D</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_vector2_d.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_vector2_d.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsValid</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsParallelTo</b>( <i>Vector2D</i> vectorTo ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsPerpendicularTo</b>( <i>Vector2D</i> vectorTo ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsSameDirectionAs</b>( <i>Vector2D</i> vectorTo ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsEqual</b>( <i>Vector2D</i> vectorTo ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Normalize</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Reverse</b>() </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>Dot</b>( <i>Vector2D</i> vector ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>Cross</b>( <i>Vector2D</i> vector ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsUnitVector</b>() </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetLength</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetLength</b>( <i>Double</i> length ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>AngleBetween</b>( <i>Vector2D</i> vectorTo ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Transform</b>( <i>Transformation2D</i> transform ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>ToString</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Vector2D</div><div class="declaration">Xaxis</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">Vector2D</div><div class="declaration">Yaxis</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">String</div><div class="declaration">Vector2dString</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">Double</div><div class="declaration">X</div><div class="operations">[Get]</div></div>
+<div class="caller"><div class="returntype">Double</div><div class="declaration">Y</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

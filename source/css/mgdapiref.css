@@ -1,0 +1,224 @@
+:root {
+    --col-bg: #121212;
+    --col-01: #456;
+    --col-02: rgb(132, 202, 230);
+    --col-03: #aaa;
+    --col-bright: #ccc;
+    --col-soft: #888;
+    --col-soft2: #6c6c6c;
+    --col-objectname: #2cf;
+    --col-param: #3f7fff;
+    --col-em: #678;
+    --bord-common: #333 solid 1px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color: var(--col-soft);
+    background-color: var(--col-bg);
+    padding: 10px 75px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--col-soft);
+}
+
+a:hover {
+    color: var(--col-bright);
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main > * {
+    margin: 10px 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.0em;
+    align-items: center;
+    background-color: #1f1f1f;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.indexhome {
+    font-size: 0.7em;
+    color: #333;
+    margin: 0px 10px;
+}
+
+.indexhome:hover {
+    text-decoration: none;
+    color: var(--col-em);
+}
+
+
+
+section {
+    margin: 0px 25px;
+}
+
+
+
+.objectType {
+    color: var(--col-01);
+    margin: 0px 20px;
+    font-size: 0.7em;
+}
+
+.objectName {
+    color: var(--col-objectname);
+    margin-left: 10px;
+}
+
+.apiconnections > * {
+    margin-bottom: 30px;
+}
+
+.apiconnections
+{
+    margin-bottom: 20px;
+    border-bottom: var(--bord-common);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.title {
+    color: var(--col-01);
+}
+
+.apiconnections .text {
+    margin-left: 15px;
+    margin-top: 5px;
+    color: var(--col-bright);
+}
+
+.callers {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.callers .title {
+    color: var(--col-objectname);
+    margin-bottom: 10px;
+}
+
+.callers .list {
+    margin-left: 30px;
+}
+
+.callers .caller {
+    display: grid;
+}
+
+.methods .caller {
+    grid-template-columns: 350px auto;
+}
+
+.propertys .caller {
+    grid-template-columns: 350px 350px auto;
+}
+
+.propertys, .enum {
+    margin-bottom: 100px;
+}
+
+.list > * {
+    margin-bottom: 5px;
+}
+
+.returntype {
+    color: var(--col-bright);
+}
+
+.returntype em {
+    color: var(--col-em);
+    font-style: normal;
+    padding-left: 10px;
+}
+
+.declaration {
+    color: var(--col-soft);
+}
+
+.declaration b {
+    color: var(--col-objectname);
+    font-weight: normal;
+}
+
+.declaration i {
+    text-decoration: none;
+    color: var(--col-param);
+    font-style: normal;
+}
+
+.propertys .declaration {
+    color: var(--col-objectname);
+}
+
+.operations {
+    color: var(--col-soft2);
+}
+
+.enum {
+    color: var(--col-bright);
+    font-size: 1em;
+}
+
+.enum .member {
+    color: var(--col-bright);
+}
+
+
+.index {
+    padding: 20px 0px;
+    width: 90%;
+    margin: auto;
+}
+
+.index .title {
+    color: var(--col-objectname);
+}
+
+.index .list {
+    padding: 5px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.index a {
+    color: var(--col-bright);
+    border: #242424 solid 1px;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 3px;
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px #000;
+}
+
+.index a:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    background: #333;
+}

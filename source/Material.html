@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Material</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Material</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupMaterial</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUMaterialRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_material_ref.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_material_ref.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetName</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetName</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetNameLegacyBehavior</b>() </div></div>
+<div class="caller"><div class="returntype">Color </div><div class="declaration"><b>GetColor</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetColor</b>( <i>Color</i> color ) </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetOpacity</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetOpacity</b>( <i>Double</i> Alpha ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>GetUseOpacity</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetUseOpacity</b>( <i>Boolean</i> use_opacity ) </div></div>
+<div class="caller"><div class="returntype">Texture </div><div class="declaration"><b>GetTexture</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetTexture</b>( <i>Texture</i> texture ) </div></div>
+<div class="caller"><div class="returntype">SUMaterialType </div><div class="declaration"><b>GetMaterialType</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetMaterialType</b>( <i>SUMaterialType</i> type ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsDrawnTransparent</b>() </div></div>
+<div class="caller"><div class="returntype">SUMaterialOwnerType </div><div class="declaration"><b>GetOwnerType</b>() </div></div>
+<div class="caller"><div class="returntype">SUMaterialColorizeType </div><div class="declaration"><b>GetColorizeType</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetColorizeType</b>( <i>SUMaterialColorizeType</i> type ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>GetColorizeDeltas</b>( <i>Double&</i> hue, <i>Double&</i> saturation, <i>Double&</i> lightness ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>WriteToFile</b>( <i>String</i> file_path ) </div></div>
+<div class="caller"><div class="returntype">SURefType </div><div class="declaration"><b>GetEntityType</b>() </div></div>
+<div class="caller"><div class="returntype">Int32 </div><div class="declaration"><b>GetID</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetPersistentID</b>() </div></div>
+<div class="caller"><div class="returntype">AttributeDictionaryCollection </div><div class="declaration"><b>GetAttributeDictionaries</b>() </div></div>
+<div class="caller"><div class="returntype">AttributeDictionary </div><div class="declaration"><b>GetAttributeDictionary</b>( <i>String</i> dictName ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddAttributeDictionary</b>( <i>AttributeDictionary</i> attributeDict ) </div></div>
+<div class="caller"><div class="returntype">Entities </div><div class="declaration"><b>GetParentEntities</b>() </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">Entity</div><div class="declaration">Entity</div><div class="operations">[Get]</div></div>
+
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

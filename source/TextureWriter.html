@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - TextureWriter</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">TextureWriter</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupTextureWriter</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUTextureWriterRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_texture_writer_ref.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_texture_writer_ref.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">Int32 </div><div class="declaration"><b>LoadEntity</b>( <i>Entity</i> Entity ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>LoadFace</b>( <i>Face</i> face, <i>Int32&</i> front_texture_id, <i>Int32&</i> back_texture_id ) </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>GetNumTextures</b>() </div></div>
+<div class="caller"><div class="returntype">ImageRep </div><div class="declaration"><b>GetImageRep</b>( <i>Int32</i> texture_id ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetTextureFilePath</b>( <i>Int32</i> texture_id ) </div></div>
+<div class="caller"><div class="returntype">Point2DCollection </div><div class="declaration"><b>GetFrontFaceUVCoords</b>( <i>Face</i> face, <i>Point3DCollection</i> points ) </div></div>
+<div class="caller"><div class="returntype">Point2DCollection </div><div class="declaration"><b>GetBackFaceUVCoords</b>( <i>Face</i> face, <i>Point3DCollection</i> points ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>WriteTexture</b>( <i>Int32</i> texture_id, <i>String</i> path, <i>Boolean</i> reduce_size ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>WriteAllTextures</b>( <i>String</i> directoryPath ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsTextureAffine</b>( <i>Int32</i> texture_id ) </div></div>
+<div class="caller"><div class="returntype">Int32 </div><div class="declaration"><b>GetTextureIdForEntity</b>( <i>Entity</i> Entity ) </div></div>
+<div class="caller"><div class="returntype">Int32 </div><div class="declaration"><b>GetTextureIdForFace</b>( <i>Face</i> face, <i>Boolean</i> front ) </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchupCAPIMgd - Model</title>
+    <link href="css/mgdapiref.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <a class="fas fa-list indexhome" href="../index.html"></a>
+        <div class="objectType">class</div>
+        <div class="objectName">Model</div>
+    </header>
+
+    <section class="apiconnections">
+        <div class="implements">
+            <div class="title">Implements COM interface:</div>
+            <div class="text">SketchupCAPICOMLib.SketchupModel</div>
+        </div>
+        <div class="comwrap">
+            <div class="title">COM wrapper @ SketchUp C API object:</div>
+            <div class="text">SUModelRef</div>
+        </div>
+        <div class="apiref">
+            <div class="title">SketchUp C API reference:</div>
+            <div class="text">
+                <a class="reflink" href="https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_model_ref.html" target="_blank">https://extensions.sketchup.com/developers/sketchup_c_api/sketchup/struct_s_u_model_ref.html</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="callers methods">
+        <div class="title">public Method(s):</div>
+        <div class="list">
+            <div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>Release</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SaveToFile</b>( <i>String</i> filePath ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SaveToFileWithVersion</b>( <i>String</i> filePath, <i>Int16</i> modelVersion ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetName</b>() </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetTitle</b>() </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetDescription</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>GetVersion</b>( <i>Int32&</i> major, <i>Int32&</i> minor, <i>Int32&</i> build ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetPath</b>() </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GetGuid</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetName</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetDescription</b>( <i>String</i> description ) </div></div>
+<div class="caller"><div class="returntype">Entities </div><div class="declaration"><b>GetEntities</b>() </div></div>
+<div class="caller"><div class="returntype">ComponentDefinitionCollection </div><div class="declaration"><b>GetComponentDefinitions</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveComponentDefinitions</b>( <i>ComponentDefinitionCollection</i> componentDefs ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddComponentDefinition</b>( <i>ComponentDefinition</i> componentDef ) </div></div>
+<div class="caller"><div class="returntype">AttributeDictionaryCollection </div><div class="declaration"><b>GetAttributeDictionaries</b>() </div></div>
+<div class="caller"><div class="returntype">AttributeDictionary </div><div class="declaration"><b>GetAttributeDictionary</b>( <i>String</i> dictName ) </div></div>
+<div class="caller"><div class="returntype">LayerCollection </div><div class="declaration"><b>GetLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Layer </div><div class="declaration"><b>GetDefaultLayer</b>() </div></div>
+<div class="caller"><div class="returntype">Layer </div><div class="declaration"><b>GetActiveLayer</b>() </div></div>
+<div class="caller"><div class="returntype">LayerFolderCollection </div><div class="declaration"><b>GetLayerFolders</b>() </div></div>
+<div class="caller"><div class="returntype">LayerCollection </div><div class="declaration"><b>GetTopLevelLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>PurgeUnusedLayers</b>() </div></div>
+<div class="caller"><div class="returntype">Int64 </div><div class="declaration"><b>PurgeEmptyLayerFolders</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveLayers</b>( <i>LayerCollection</i> removingLayers ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveLayerFolders</b>( <i>LayerFolderCollection</i> removingFolders ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddLayer</b>( <i>Layer</i> addingLayer ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddLayerFolder</b>( <i>LayerFolder</i> addingFolder ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetActiveLayer</b>( <i>Layer</i> activeLayer ) </div></div>
+<div class="caller"><div class="returntype">ComponentDefinitionCollection </div><div class="declaration"><b>GetGroupDefinitions</b>() </div></div>
+<div class="caller"><div class="returntype">ComponentDefinitionCollection </div><div class="declaration"><b>GetImageDefinitions</b>() </div></div>
+<div class="caller"><div class="returntype">FontCollection </div><div class="declaration"><b>GetFonts</b>() </div></div>
+<div class="caller"><div class="returntype">Entities </div><div class="declaration"><b>GetActiveEntities</b>() </div></div>
+<div class="caller"><div class="returntype">InstancePath </div><div class="declaration"><b>GetActivePath</b>() </div></div>
+<div class="caller"><div class="returntype">InstancePath </div><div class="declaration"><b>GetInstancePathByPid</b>( <i>String</i> pid_ref ) </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsGeoReferenced</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetGeoReference</b>( <i>Double</i> latitude, <i>Double</i> longitude, <i>Double</i> altitude, <i>Boolean</i> is_z_value_centered, <i>Boolean</i> is_on_ocean_floor ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>OrientFacesConsistently</b>( <i>Boolean</i> recurse_components ) </div></div>
+<div class="caller"><div class="returntype">SceneCollection </div><div class="declaration"><b>GetScenes</b>() </div></div>
+<div class="caller"><div class="returntype">Scene </div><div class="declaration"><b>GetActiveScene</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetActiveScene</b>( <i>Scene</i> scene ) </div></div>
+<div class="caller"><div class="returntype">Scene </div><div class="declaration"><b>GetSceneWithName</b>( <i>String</i> name ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddScenes</b>( <i>SceneCollection</i> scenes ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveScenes</b>( <i>SceneCollection</i> scenes ) </div></div>
+<div class="caller"><div class="returntype">Int32 </div><div class="declaration"><b>AddScene</b>( <i>Scene</i> scene, <i>Int32</i> index ) </div></div>
+<div class="caller"><div class="returntype">Scene </div><div class="declaration"><b>AddMatchPhotoScene</b>( <i>String</i> image_file, <i>Camera</i> camera, <i>String</i> scene_name ) </div></div>
+<div class="caller"><div class="returntype">String </div><div class="declaration"><b>GenerateUniqueMaterialName</b>( <i>String</i> nameIn ) </div></div>
+<div class="caller"><div class="returntype">MaterialCollection </div><div class="declaration"><b>GetMaterials</b>() </div></div>
+<div class="caller"><div class="returntype">MaterialCollection </div><div class="declaration"><b>GetAllMaterials</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>AddMaterials</b>( <i>MaterialCollection</i> materials ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>RemoveMaterials</b>( <i>MaterialCollection</i> materials ) </div></div>
+<div class="caller"><div class="returntype">Material </div><div class="declaration"><b>LoadMaterial</b>( <i>String</i> file_path ) </div></div>
+<div class="caller"><div class="returntype">Location </div><div class="declaration"><b>GetLocation</b>() </div></div>
+<div class="caller"><div class="returntype">Double </div><div class="declaration"><b>GetNorthCorrection</b>() </div></div>
+<div class="caller"><div class="returntype">Boolean </div><div class="declaration"><b>IsDrawingElementVisible</b>( <i>InstancePath</i> path ) </div></div>
+<div class="caller"><div class="returntype">Camera </div><div class="declaration"><b>GetCamera</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetCamera</b>( <i>Camera</i> camera ) </div></div>
+<div class="caller"><div class="returntype">ComponentBehavior </div><div class="declaration"><b>GetBehavior</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>SetBehavior</b>( <i>ComponentBehavior</i> behavior ) </div></div>
+<div class="caller"><div class="returntype">SUModelUnits </div><div class="declaration"><b>GetUnits</b>() </div></div>
+<div class="caller"><div class="returntype">ModelStatistics </div><div class="declaration"><b>GetStatistics</b>() </div></div>
+<div class="caller"><div class="returntype">Classifications </div><div class="declaration"><b>GetClassifications</b>() </div></div>
+<div class="caller"><div class="returntype">Axes </div><div class="declaration"><b>GetAxes</b>() </div></div>
+<div class="caller"><div class="returntype">LengthFormatter </div><div class="declaration"><b>GetLengthFormatter</b>() </div></div>
+<div class="caller"><div class="returntype">RenderingOptions </div><div class="declaration"><b>GetRenderingOptions</b>() </div></div>
+<div class="caller"><div class="returntype">ShadowInfo </div><div class="declaration"><b>GetShadowInfo</b>() </div></div>
+<div class="caller"><div class="returntype">OptionsManager </div><div class="declaration"><b>GetOptionsManager</b>() </div></div>
+<div class="caller"><div class="returntype">Styles </div><div class="declaration"><b>GetStyles</b>() </div></div>
+<div class="caller"><div class="returntype">LineStyles </div><div class="declaration"><b>GetLineStyles</b>() </div></div>
+<div class="caller"><div class="returntype">DimensionStyle </div><div class="declaration"><b>GetDimensionStyle</b>() </div></div>
+<div class="caller"><div class="returntype">EntityCollection </div><div class="declaration"><b>GetEntitiesOfTypeByPersistentIDs</b>( <i>UInt32</i> type_flags, <i>List</i> pids ) </div></div>
+<div class="caller"><div class="returntype">ComponentDefinition </div><div class="declaration"><b>LoadDefinition</b>( <i>String</i> filename, <i>SUModelLoadStatus&</i> status ) </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>FixErrors</b>() </div></div>
+<div class="caller"><div class="returntype">SUResult </div><div class="declaration"><b>MergeCoplanarFaces</b>() </div></div>
+<div class="caller"><div class="returntype">Void </div><div class="declaration"><b>Dispose</b>() </div></div>
+
+        </div>
+    </section>
+
+    <section class="callers propertys">
+        <div class="title">public Property(s):</div>
+        <div class="list">
+            
+        </div>
+    </section>
+
+    </main>
+
+</body>
+</html>
